@@ -10,8 +10,8 @@ What do we do?
 4) Lazy? Use Google Assistant Buddy
 5) Finally While Exiting show Exit Card All lights, fans are turned off, Door is Locked
 
-Electronic Components Used	  :	Arduino Uno(Micro Controller), RFID, LCD(16*2), DC MOTOR, SERVO MOTOR, L293D, LEDS
-Hardware Components Used    	:	Household Lock 
-Language Used			            :	Arduino Uno
+Electronic Components Used    :	Arduino Uno(Micro Controller), RFID, LCD(16*2), DC MOTOR, SERVO MOTOR, L293D, LEDS
+Hardware Components Used      :	Household Lock 
+Language Used                 :	Arduino Uno
 External Libararies Installed	:	MFRC522,SoftwareSerial,BlynkSimpleStream
 Video Link                    : https://drive.google.com/drive/folders/1oBr1VqJ7Ndpvqt8-e8qax5KYgGmufzBY?usp=sharing
