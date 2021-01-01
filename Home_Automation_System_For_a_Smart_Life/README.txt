@@ -13,5 +13,5 @@ What do we do?
 Electronic Components Used    :	Arduino Uno(Micro Controller), RFID, LCD(16*2), DC MOTOR, SERVO MOTOR, L293D, LEDS
 Hardware Components Used      :	Household Lock 
 Language Used                 :	Arduino Uno
-External Libararies Installed	:	MFRC522,SoftwareSerial,BlynkSimpleStream
+External Libararies Installed :	MFRC522,SoftwareSerial,BlynkSimpleStream
 Video Link                    : https://drive.google.com/drive/folders/1oBr1VqJ7Ndpvqt8-e8qax5KYgGmufzBY?usp=sharing
