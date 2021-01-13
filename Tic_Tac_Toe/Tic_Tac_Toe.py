@@ -18,7 +18,6 @@ def matrix_maker(n,matrix):
 #Funtion to map Index
 def index_mapper(n,pos):
 	a=[int(n/6),int(n/2),int((5*n)/6)]
-	pos-=1
 	index_1=int(pos/3)
 	index_2=pos%3
 	return a[index_1],a[index_2]
@@ -43,9 +42,7 @@ def isempty(a):
 
 #Function to tell if a block is not empty	
 def isnonempty(a):
-	if(a==empty):
-		return 0
-	return 1
+	return not isempty(a)
 
 #Function to check equality
 def equality_checker(a,b,c):
@@ -69,42 +66,55 @@ def diagonal_check(a,b):
 		return equality_checker(matrix[index[0]][index[0]],matrix[index[1]][index[1]],matrix[index[2]][index[2]])
 	else:
 		return equality_checker(matrix[index[2]][index[0]],matrix[index[1]][index[1]],matrix[index[0]][index[2]])
-	
+
+#Function to check if someone has won
+def checker(position,row,col,player_name):
+	if(position%2==0):
+				if(row_check(row) or col_check(col)):
+					print("Game over!")
+					print("Player ",player_name," Wins!")
+					return 1
+	else:
+				if(row_check(row)or col_check(col) or diagonal_check(row,col)):
+					print("Player ",player_name," Wins!")
+					return 1
+	return 0
+					
 #Main Function
 def tic_tac_toe():
 	player_name='X'
 	matrix_maker(n,matrix)
 	i=0
+	flag=0
 	for i in range(9):
+		
 		print("Hey ",player_name,", Its your turn. Enter your position ",end="")
 		position=int(input())
-		row,col=index_mapper(n,position)
-		#print(row,col)
+		row,col=index_mapper(n,position-1)
+		
 		if(isempty(matrix[row][col])):
 			matrix[row][col]=player_name
 			print_matrix()				
 		else:
 			print("Oops that's Occupied! ",player_name," Try another empty space\n")
-			i-=1
+			i=i-1
 			continue
-		if(i>=4):
-			if(position%2==0):
-				if(row_check(row) or col_check(col)):
-					print("Game over!")
-					print("Player ",player_name," Wins!")
-					break
-			else:
-				if(row_check(row)or col_check(col) or diagonal_check(row,col)):
-					print("Player ",player_name," Wins!")
-					break
+			
+		if(i>=4 and checker(position,row,col,player_name)):
+			break
+			
 		player_name=next_player_name(player_name)
-	if(i>=8):
-		print("Tie")
+		if(i==8):
+			flag=1
+	if(flag):
+		print("Tie!")
 		print("Intresting game guys")	
 		
-num=int(input())
+num=int(input("Enter Grid Spacing Level "))
+print()
 x=2*num-1
 n=(x-1)*3+5
 empty=" "
 matrix=[]
+
 tic_tac_toe()
