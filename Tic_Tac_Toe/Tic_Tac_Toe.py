@@ -2,18 +2,18 @@
 
 # Function to construct a matrix
 def matrix_maker(number):
-    for i in range(0, number):
+    for a in range(0, number):
         new = []
-        for j in range(0, number):
+        for b in range(0, number):
             new.append(empty)
         matrix.append(new)
-    for i in range(x, number, x + 1):
-        for j in range(0, number):
-            matrix[i][j] = "-"
-            matrix[j][i] = "|"
-    for i in range(x, number, x + 1):
-        for j in range(x, number, x + 1):
-            matrix[i][j] = "+"
+    for a in range(x, number, x + 1):
+        for b in range(0, number):
+            matrix[a][b] = "-"
+            matrix[b][a] = "|"
+    for a in range(x, number, x + 1):
+        for b in range(x, number, x + 1):
+            matrix[a][b] = "+"
 
 
 # Function to map Index
@@ -78,15 +78,17 @@ def diagonal_check(a, b):
 
 
 # Function to check if someone has won
-def checker(position, row, col, player_name):
+def checker(position, row, col, player_name, players):
     if position % 2 == 0:
         if row_check(row) or col_check(col):
             print("Game over!")
             print(players[player_name], " Wins!")
+            scores[players[player_name]] += 1
             return 1
     else:
         if row_check(row) or col_check(col) or diagonal_check(row, col):
-            print("Player ", player_name, " Wins!")
+            print("Player ", players[player_name], " Wins!")
+            scores[players[player_name]] += 1
             return 1
     return 0
 
@@ -107,10 +109,13 @@ def exceptional_handling(player_name):
 
 # Main Function
 def tic_tac_toe():
+    player_1 = input("Hey! Who wanna Play X?")
+    player_2 = input("So Who is choosing O?")
+    players = {'X': player_1, 'O': player_2}
     player_name = 'X'
     matrix_maker(n)
     flag = 0
-    for i in range(9):
+    for turn in range(9):
         # Input and Exceptional Handling
         print("Hey ", players[player_name], ", Its your turn. Enter your position ", end="")
         position = exceptional_handling(player_name)
@@ -122,14 +127,14 @@ def tic_tac_toe():
             print_matrix()
         else:
             print("Oops that's Occupied! ", players[player_name], " Try another empty space\n")
-            i = i - 1
+            turn = turn - 1
             continue
 
-        if i >= 4 and checker(position, row, col, player_name):
+        if turn >= 4 and checker(position, row, col, player_name, players):
             break
 
         player_name = next_player_name(player_name)
-        if i == 8:
+        if turn == 8:
             flag = 1
     if flag:
         print("Tie!")
@@ -145,11 +150,18 @@ num = int(num)
 x = 2 * num - 1
 n = (x - 1) * 3 + 5
 
-player_X = input("Hey! Who wanna Play X? X plays the First Turn :p")
-player_O = input("So Who is choosing O?")
-players = {'X': player_X, 'O': player_O}
+player_1 = input("Enter the name of Player 1 ")
+player_2 = input("Enter the name of Player 2 ")
 
-empty = " "
-matrix = []
+scores = {player_1: 0, player_2: 0}
 
-tic_tac_toe()
+number_of_games = int(input("How many Games do you want to Play? "))
+
+for i in range(number_of_games):
+    empty = " "
+    matrix = []
+    tic_tac_toe()
+if scores[player_1] == scores[player_2]:
+    print("Match ended and its a Tie!\n\tGreat Competitors")
+else:
+    print(player_1 if (scores[player_1] > scores[player_2]) else player_2, "Wins the total Game!")
