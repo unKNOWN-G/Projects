@@ -82,7 +82,7 @@ def checker(position, row, col, player_name):
     if position % 2 == 0:
         if row_check(row) or col_check(col):
             print("Game over!")
-            print("Player ", player_name, " Wins!")
+            print(players[player_name], " Wins!")
             return 1
     else:
         if row_check(row) or col_check(col) or diagonal_check(row, col):
@@ -112,7 +112,7 @@ def tic_tac_toe():
     flag = 0
     for i in range(9):
         # Input and Exceptional Handling
-        print("Hey ", player_name, ", Its your turn. Enter your position ", end="")
+        print("Hey ", players[player_name], ", Its your turn. Enter your position ", end="")
         position = exceptional_handling(player_name)
 
         row, col = index_mapper(n, position - 1)
@@ -121,7 +121,7 @@ def tic_tac_toe():
             matrix[row][col] = player_name
             print_matrix()
         else:
-            print("Oops that's Occupied! ", player_name, " Try another empty space\n")
+            print("Oops that's Occupied! ", players[player_name], " Try another empty space\n")
             i = i - 1
             continue
 
@@ -144,6 +144,10 @@ while not num.isdigit():
 num = int(num)
 x = 2 * num - 1
 n = (x - 1) * 3 + 5
+
+player_X = input("Hey! Who wanna Play X? X plays the First Turn :p")
+player_O = input("So Who is choosing O?")
+players = {'X': player_X, 'O': player_O}
 
 empty = " "
 matrix = []
