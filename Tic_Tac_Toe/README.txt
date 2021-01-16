@@ -14,12 +14,11 @@ Update Count	Date			Description
 	3	13-01-2021		Made the code a bit more modular
 	4	16-01-2021		Made Exceptional Handlings For the NOtebook Version Release of Tic Tac Toe game
 	5	16-01-2021		Asking the users to input their names for for X, O choosing and diplaying their names on result printing statement
+	6	17-01-2021		Game of 5?(Here 5 is just an arbitary number). Making the players play particular number of games andfinally declaring the Winner based on all the all games
 
 Advancements that can be made
-1) Game of 5?(Here 5 is just an arbitary number)
-	Making the players play particular number of games andfinally declaring the Winner based on all the 5 games
-2) Computer opponent Version
-3) Open CV can be used to draw on picture and display the tic tac toe as an actual version
+1) Computer opponent Version
+2) Open CV can be used to draw on picture and display the tic tac toe as an actual version
 
 Advancements that can be made using new techniques that would be learnt
 1) Click -> Option Selecting Game instead of Indexing(1-9)
