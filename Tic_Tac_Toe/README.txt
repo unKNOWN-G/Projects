@@ -1,6 +1,6 @@
 							TIC TAC TOE
 							¯¯¯¯¯¯¯¯¯¯¯
-										Author - unKNOWN-G
+									     Author - unKNOWN-G
 
 This is a basic 2 playered Game where each player takes a turn and marks his symbol(X or O) of a 3*3 grid
 The person who makes 3 continous symbols in either a horizontal or vertical or diagonal line wins the game
