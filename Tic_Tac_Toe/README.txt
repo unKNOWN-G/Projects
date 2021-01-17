@@ -9,7 +9,7 @@ Language uses: Python
 
 Update Count	Date			Description
 
-	1	11-01-2021		A basic file to display the matrix in a notepad or any python teminal is made
+	1	11-01-2021		A basic file to display the matrix in a jupyter notebook or any python teminal is made
 	2	12-01-2021		A Working Tic Tac Toe without exceptional Handling was made
 	3	13-01-2021		Made the code a bit more modular
 	4	16-01-2021		Made Exceptional Handlings For the NOtebook Version Release of Tic Tac Toe game
