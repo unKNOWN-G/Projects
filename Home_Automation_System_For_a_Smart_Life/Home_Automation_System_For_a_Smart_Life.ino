@@ -4,7 +4,7 @@
  * Team:
  * Team Name      - RoboSapiens
  * Project Name   - Home Automation System For a Smart Life
- * Professor Name - Dr Ezhil
+ * Professor Name - Dr. D. Ezhilarasi
  * Project Leader - K. Sai Venkata Giri
  * Teamates       - 1) N. Hemangani
  *                  2) T. Pushpa Teja
