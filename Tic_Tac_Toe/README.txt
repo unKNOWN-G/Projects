@@ -1,6 +1,6 @@
 							TIC TAC TOE
 							¯¯¯¯¯¯¯¯¯¯¯
-									     Author - unKNOWN-G
+Date - 11-01-2021									     Author - unKNOWN-G
 
 This is a basic 2 playered Game where each player takes a turn and marks his symbol(X or O) of a 3*3 grid
 The person who makes 3 continous symbols in either a horizontal or vertical or diagonal line wins the game
@@ -15,6 +15,7 @@ Update Count	Date			Description
 	4	16-01-2021		Made Exceptional Handlings For the NOtebook Version Release of Tic Tac Toe game
 	5	16-01-2021		Asking the users to input their names for for X, O choosing and diplaying their names on result printing statement
 	6	17-01-2021		Game of 5?(Here 5 is just an arbitary number). Making the players play particular number of games andfinally declaring the Winner based on all the all games
+	7	17-01-2021		Added a function for the Exceptional Handlings of string as input for a number ; Player name inputs
 
 Advancements that can be made
 1) Computer opponent Version
