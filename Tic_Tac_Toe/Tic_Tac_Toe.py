@@ -87,19 +87,25 @@ def checker(position, row, col, player_name, players):
             return 1
     else:
         if row_check(row) or col_check(col) or diagonal_check(row, col):
-            print("Player ", players[player_name], " Wins!")
+            print(players[player_name], " Wins!")
             scores[players[player_name]] += 1
             return 1
     return 0
 
 
+# Input Number Exceptional Handling
+
+def input_number_exceptional_handling(num_input):
+    while not num_input.isdigit():
+        print("Please Enter a Number")
+        num_input = input()
+    return int(num_input)
+
+
 # Exceptional Handling
 def exceptional_handling(player_name):
     check_input = input()
-    if not check_input.isdigit():
-        print("Enter a Valid Position Number")
-        return exceptional_handling(player_name)
-    check_input = int(check_input)
+    check_input = input_number_exceptional_handling(check_input)
     if not (9 >= check_input >= 1):
         print("Please Enter an Index from 1-9")
         return exceptional_handling(player_name)
@@ -108,14 +114,22 @@ def exceptional_handling(player_name):
 
 
 # Main Function
-def tic_tac_toe():
-    player_1 = input("Hey! Who wanna Play X?")
-    player_2 = input("So Who is choosing O?")
+def tic_tac_toe(player_1, player_2):
+    player_1_name = input("\nHey! Who wanna Play X?")
+    while not (player_1_name == player_1 or player_1_name == player_2):
+        player_1_name = input("Please Enter the Player Name")
+    if player_1_name == player_1:
+        player_1 = player_1_name
+        player_2 = player_2
+    else:
+        player_2 = player_1
+        player_1 = player_1_name
     players = {'X': player_1, 'O': player_2}
     player_name = 'X'
     matrix_maker(n)
     flag = 0
-    for turn in range(9):
+    turn=0
+    while turn < 9:
         # Input and Exceptional Handling
         print("Hey ", players[player_name], ", Its your turn. Enter your position ", end="")
         position = exceptional_handling(player_name)
@@ -126,8 +140,7 @@ def tic_tac_toe():
             matrix[row][col] = player_name
             print_matrix()
         else:
-            print("Oops that's Occupied! ", players[player_name], " Try another empty space\n")
-            turn = turn - 1
+            print("Oops that's Occupied ", players[player_name], "! Try another empty space\n")
             continue
 
         if turn >= 4 and checker(position, row, col, player_name, players):
@@ -136,31 +149,31 @@ def tic_tac_toe():
         player_name = next_player_name(player_name)
         if turn == 8:
             flag = 1
+        turn = turn+1
     if flag:
         print("Tie!")
         print("Interesting game guys")
 
 
 num = input("Enter Grid Spacing Level ")
-while not num.isdigit():
-    print("Please Enter a Number")
-    num = input("Enter Grid Spacing Level ")
+num = input_number_exceptional_handling(num)
 
 num = int(num)
 x = 2 * num - 1
 n = (x - 1) * 3 + 5
 
-player_1 = input("Enter the name of Player 1 ")
+player_1 = input("\nEnter the name of Player 1 ")
 player_2 = input("Enter the name of Player 2 ")
 
 scores = {player_1: 0, player_2: 0}
 
-number_of_games = int(input("How many Games do you want to Play? "))
+number_of_games = input("How many Games do you want to Play? ")
+number_of_games = input_number_exceptional_handling(number_of_games)
 
 for i in range(number_of_games):
     empty = " "
     matrix = []
-    tic_tac_toe()
+    tic_tac_toe(player_1, player_2)
 if scores[player_1] == scores[player_2]:
     print("Match ended and its a Tie!\n\tGreat Competitors")
 else:
