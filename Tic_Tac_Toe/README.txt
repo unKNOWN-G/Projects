@@ -14,7 +14,8 @@ Update Count	Date			Description
 	3	13-01-2021		Made the code a bit more modular
 	4	16-01-2021		Made Exceptional Handlings For the NOtebook Version Release of Tic Tac Toe game
 	5	16-01-2021		Asking the users to input their names for for X, O choosing and diplaying their names on result printing statement
-	6	17-01-2021		Game of 5?(Here 5 is just an arbitary number). Making the players play particular number of games andfinally declaring the Winner based on all the all games
+	6	17-01-2021		Game of 5?(Here 5 is just an arbitary number). 
+					Making the players play particular number of games and finally declaring the Winner based on all the all games
 	7	17-01-2021		Added a function for the Exceptional Handlings of string as input for a number ; Player name inputs
 
 Advancements that can be made
