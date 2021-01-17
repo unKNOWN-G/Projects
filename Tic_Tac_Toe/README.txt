@@ -22,6 +22,7 @@ Language uses: Python
 Advancements that can be made
 1) Computer opponent Version
 2) Open CV can be used to draw on picture and display the tic tac toe as an actual version
+3) A Web Page Can be made To play the game and Can be hosted with google sites
 
 Advancements that can be made using new techniques that would be learnt
 1) Click -> Option Selecting Game instead of Indexing(1-9)
