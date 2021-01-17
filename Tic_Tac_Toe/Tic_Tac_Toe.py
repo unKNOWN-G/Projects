@@ -114,21 +114,21 @@ def exceptional_handling(player_name):
 
 
 # Main Function
-def tic_tac_toe(player_1, player_2):
+def tic_tac_toe(player_a, player_b):
     player_1_name = input("\nHey! Who wanna Play X?")
-    while not (player_1_name == player_1 or player_1_name == player_2):
+    while not (player_1_name == player_a or player_1_name == player_b):
         player_1_name = input("Please Enter the Player Name")
-    if player_1_name == player_1:
-        player_1 = player_1_name
-        player_2 = player_2
+    if player_1_name == player_a:
+        player_a = player_1_name
+        player_b = player_b
     else:
-        player_2 = player_1
-        player_1 = player_1_name
-    players = {'X': player_1, 'O': player_2}
+        player_b = player_a
+        player_a = player_1_name
+    players = {'X': player_a, 'O': player_b}
     player_name = 'X'
     matrix_maker(n)
     flag = 0
-    turn=0
+    turn = 0
     while turn < 9:
         # Input and Exceptional Handling
         print("Hey ", players[player_name], ", Its your turn. Enter your position ", end="")
@@ -149,7 +149,7 @@ def tic_tac_toe(player_1, player_2):
         player_name = next_player_name(player_name)
         if turn == 8:
             flag = 1
-        turn = turn+1
+        turn = turn + 1
     if flag:
         print("Tie!")
         print("Interesting game guys")
