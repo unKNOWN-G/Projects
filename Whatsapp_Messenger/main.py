@@ -28,8 +28,3 @@ send_button.click()
 sleep(3)
 text_box = driver.find_element_by_xpath('//div[@class="_2HE1Z _1hRBM"]')
 text_box.send_keys("Yo")
-
-test_button = driver.find_element_by_xpath('//button[@class="_2Ujuu"]')
-test_button.click()
-
-
