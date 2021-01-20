@@ -1,3 +1,11 @@
+from gtts import gTTS
+
+language = 'en'
+output = gTTS(text="Worst fellow pora", lang=language,slow=False)
+
+output.save("C:/Users/91938/Desktop/test.mp3")
+
+
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from time import sleep
