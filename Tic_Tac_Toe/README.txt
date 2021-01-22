@@ -5,7 +5,7 @@ Date - 11-01-2021									     Author - unKNOWN-G
 This is a basic 2 playered Game where each player takes a turn and marks his symbol(X or O) of a 3*3 grid
 The person who makes 3 symbols in either a horizontal or vertical or diagonal line wins the game
 
-Language uses: Python
+Language used : Python
 
   Update Count	   Date							Description
   ¯¯¯¯¯¯¯¯¯¯¯¯	   ¯¯¯¯							¯¯¯¯¯¯¯¯¯¯¯
