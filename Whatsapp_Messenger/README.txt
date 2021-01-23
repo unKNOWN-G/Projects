@@ -19,7 +19,7 @@ Language Used : Python
 	1	18-01-2021		In this update a Basic Code file which was able to send an Image input to a contact number was made
 	2	19-01-2021		Found Some bugs of the code not able to detect contact if its not on the front page and mad changes to Search
 	3	22-01-2021		Text to audio speech Converter is made
-	
+	4	23-01-2021		Errors in Finding the name box were partially rectified
 
 
 Advancements that can be made
