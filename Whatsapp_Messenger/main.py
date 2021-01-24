@@ -38,15 +38,18 @@ sleep(5)
 # Listing Files in the folder
 files = os.listdir(media_files)
 
-attachment_box = driver.find_element_by_xpath('//div[@title="Attach"]')
-attachment_box.click()
-image_box = driver.find_element_by_xpath('//input[@accept="image/*,video/mp4,video/3gpp,video/quicktime"]')
-image_box.send_keys(media_files + files[i])
-sleep(1)
+for i in range(len(files)):
+    attachment_box = driver.find_element_by_xpath('//div[@title="Attach"]')
+    attachment_box.click()
+    image_box = driver.find_element_by_xpath('//input[@accept="image/*,video/mp4,video/3gpp,video/quicktime"]')
+    image_box.send_keys(media_files + files[i])
+    sleep(1)
 
-send_media_box = driver.find_element_by_xpath(
-    '//*[@id="app"]/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div/div/span')
-send_media_box.click()
+    # Code to Send Media Files
+    send_media_box = driver.find_element_by_xpath(
+        '//*[@id="app"]/div/div/div[2]/div[2]/span/div/span/div/div/div[2]/span/div/div/span')
+    send_media_box.click()
+    sleep(2)
 sleep(2)
 
 # Code To send text message
