@@ -20,6 +20,7 @@ Language Used : Python
 	2	19-01-2021		Found Some bugs of the code not able to detect contact if its not on the front page and mad changes to Search
 	3	22-01-2021		Text to audio speech Converter is made
 	4	23-01-2021		Errors in Finding the name box were partially rectified
+	5	24-01-2021		Added the folders part where Images of the person can be included and coded for accesing them and sending them at a 2s delay
 
 
 Advancements that can be made
