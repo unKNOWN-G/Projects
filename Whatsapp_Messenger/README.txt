@@ -24,8 +24,7 @@ Language Used : Python
 
 
 Advancements that can be made
-1) The Wish Exactly that needs to be texted can b still implemented
-2) Search for the contact photos in the gallery using CNN and Send it along with the message
-3) Send Messages on a particular time
-4) Keep all the Remainder Details in a Excel File and make the code recognize those dates autmatically and send messages
-5) Keep this in some colab or something and make it automatic
+1) Search for the contact photos in the gallery using CNN and Send it along with the message
+2) Send Messages on a particular time
+3) Keep all the Remainder Details in a Excel File and make the code recognize those dates autmatically and send messages
+4) Keep this in some colab or something and make it automatic
