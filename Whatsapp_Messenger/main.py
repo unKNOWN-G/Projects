@@ -61,3 +61,6 @@ message_box.send_keys(msg)
 message_sender = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[3]/button/span')
 message_sender.click()
 sleep(3)
+
+# Code to CLose Driver
+driver.close()
