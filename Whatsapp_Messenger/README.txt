@@ -25,8 +25,8 @@ Language Used : Python
 					The only Requirement is the Computer should be either On or in Sleep Mode
 
 
-
 Advancements that can be made
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 1) Search for the contact photos in the gallery using CNN and Send it along with the message
 2) Keep all the Remainder Details in a Excel File and make the code recognize those dates autmatically and send messages
 3) Keep this in some colab or something and make it automatic
