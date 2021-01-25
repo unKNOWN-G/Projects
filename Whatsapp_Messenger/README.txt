@@ -21,10 +21,12 @@ Language Used : Python
 	3	22-01-2021		Text to audio speech Converter is made
 	4	23-01-2021		Errors in Finding the name box were partially rectified
 	5	24-01-2021		Added the folders part where Images of the person can be included and coded for accesing them and sending them at a 2s delay
+	6	25-01-2021		Scheduled messages using Windows Task Manager. This can also be achieved online using AmazonServer But thats for paid use. Which isnt needed for this project
+					The only Requirement is the Computer should be either On or in Sleep Mode
 
 
 Advancements that can be made
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 1) Search for the contact photos in the gallery using CNN and Send it along with the message
-2) Send Messages on a particular time
-3) Keep all the Remainder Details in a Excel File and make the code recognize those dates autmatically and send messages
-4) Keep this in some colab or something and make it automatic
+2) Keep all the Remainder Details in a Excel File and make the code recognize those dates autmatically and send messages
+3) Keep this in some colab or something and make it automatic
