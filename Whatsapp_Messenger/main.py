@@ -17,7 +17,6 @@ output.save(media_files + "0 Audio.mp3")
 # Code to Save Login Details using cookies
 options = webdriver.ChromeOptions();
 options.add_argument('--user-data-dir=./User_Data')
-driver = webdriver.Chrome('C:/Users/91938/Desktop/GIT_HUB/chromedriver.exe', chrome_options=options)
 driver = webdriver.Chrome('C:/Users/91938/Desktop/Whatsapp_Messenger/chromedriver.exe', chrome_options=options)
 
 # Open Website
