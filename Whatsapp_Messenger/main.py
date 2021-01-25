@@ -58,21 +58,15 @@ def txt_sender(value):
 
 # Main Function
 def whatsapp_automater(name, audio_value, text_value):
-    # Opening New chat Option
-    user = driver.find_element_by_xpath('//*[@id="side"]/header/div[2]/div/span/div[2]/div/span')
-    user.click()
-
     # Code to Find Element in the Search box
-    search_box = driver.find_element_by_xpath('//*[@id="app"]/div/div/div[2]/div[1]/span/div/span/div/div['
-                                              '1]/div/label/div/div[2]')
-    search_box.click()
-    search_box.send_keys(name)
-    sleep(5)
+    user = driver.find_element_by_xpath('//div[@class="_1awRl copyable-text selectable-text"]')
+    user.send_keys(name)
+    user.click()
+    sleep(15)
 
     # Code to Click the Open first Chat box in Search Results
     opening_chat = driver.find_element_by_xpath(
-        '//*[@id="app"]/div/div/div[2]/div[1]/span/div/span/div/div[2]/div[1]/div/div/div[2]/div/div/div[2]/div['
-        '1]/div/span/span')
+        '//*[@id="pane-side"]/div[1]/div/div/div[15]/div')
     opening_chat.click()
     sleep(5)
 
