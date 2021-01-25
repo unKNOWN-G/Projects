@@ -23,10 +23,11 @@ Language Used : Python
 	5	24-01-2021		Added the folders part where Images of the person can be included and coded for accesing them and sending them at a 2s delay
 	6	25-01-2021		Scheduled messages using Windows Task Manager. This can also be achieved online using AmazonServer But thats for paid use. Which isnt needed for this project
 					The only Requirement is the Computer should be either On or in Sleep Mode
-
+	7	25-01-2021		Added a Feature to send to Multiple groups by storing details in an Execel file
+	8	25-01-2021		Added a Feature of customising audio and text to each group
 
 Advancements that can be made
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-1) Search for the contact photos in the gallery using CNN and Send it along with the message
-2) Keep all the Remainder Details in a Excel File and make the code recognize those dates autmatically and send messages
-3) Keep this in some colab or something and make it automatic
+1) Search for the contact photos in the gallery using CNN and Send it along with the message(Kinda not sure)
+2) Make the code recognize those dates autmatically and send messages (Automating Task Scheduler is required or a server is required. Both arent feasible)
+3) Keep this in some colab or something and make it automatic (Needs a server. So not implementing it Right now)
