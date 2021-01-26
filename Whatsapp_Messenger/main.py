@@ -11,7 +11,7 @@ contact_names = pd.read_csv(file_dir + event + "/Contact.csv")
 msg = open(file_dir + event + "/txt.txt", "r").read()
 media_files = file_dir + event + "/Media/"
 
-#Text to Audio Converter
+# Text to Audio Converter
 language = 'en'
 output = gTTS(text=msg, lang=language, slow=False)
 output.save(file_dir + event + "/0 Audio.mp3")
@@ -95,6 +95,8 @@ def whatsapp_automater(name, audio_value, text_value):
     txt_to_audio(audio_value)
 
     txt_sender(text_value)
+
+    sleep(2)
 
 
 # Code to Send To Multiple Contacts
