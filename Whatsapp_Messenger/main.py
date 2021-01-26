@@ -5,7 +5,7 @@ import os
 import pandas as pd
 
 # Initial Details
-file_dir = "C:/Users/91938/Desktop/GIT_HUB/Projects/Whatsapp_Messenger/Event/"
+file_dir = "C:/Users/91938/Desktop/GIT_HUB/Projects/Whatsapp_Assistant/Event/"
 event = "Republic_Day"
 contact_names = pd.read_csv(file_dir + event + "/Contact.csv")
 msg = open(file_dir + event + "/txt.txt", "r").read()
