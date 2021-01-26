@@ -12,9 +12,9 @@ msg = open(file_dir + event + "/txt.txt", "r").read()
 media_files = file_dir + event + "/Media/"
 
 # Text to Audio Converter
-language = 'en'
-output = gTTS(text=msg, lang=language, slow=False)
-output.save(file_dir + event + "/0 Audio.mp3")
+# language = 'en'
+# output = gTTS(text=msg, lang=language, slow=False)
+# output.save(file_dir + event + "/0 Audio.mp3")
 
 # Code to Save Login Details using cookies
 options = webdriver.ChromeOptions();
@@ -23,7 +23,7 @@ driver = webdriver.Chrome('C:/Users/91938/Desktop/GIT_HUB/chromedriver.exe', chr
 
 # Open Website
 driver.get('https://web.whatsapp.com/')
-sleep(20)
+sleep(12)
 
 
 # Function to Send Audio only When needed
@@ -46,14 +46,14 @@ def txt_to_audio(value):
 def txt_sender(value):
     if value == 1:
         # Code To send text message
-        message_box = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div')
+        message_box = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[2]/div/div[2]')
         sleep(2)
         message_box.send_keys(msg)
 
         # Code to CLick Send Button
         message_sender = driver.find_element_by_xpath('//*[@id="main"]/footer/div[1]/div[3]/button/span')
         message_sender.click()
-        sleep(3)
+        sleep(2)
 
 
 # Main Function
@@ -67,12 +67,11 @@ def whatsapp_automater(name, audio_value, text_value):
                                               '1]/div/label/div/div[2]')
     search_box.click()
     search_box.send_keys(name)
-    sleep(5)
+    sleep(6)
 
     # Code to Click the Open first Chat box in Search Results
     opening_chat = driver.find_element_by_xpath(
-        '//*[@id="app"]/div/div/div[2]/div[1]/span/div/span/div/div[2]/div[1]/div/div/div[2]/div/div/div[2]/div['
-        '1]/div/span/span')
+        '//*[@id="app"]/div/div/div[2]/div[1]/span/div/span/div/div[2]/div[1]/div/div/div[2]')
     opening_chat.click()
     sleep(5)
 
