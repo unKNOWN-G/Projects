@@ -11,10 +11,10 @@ contact_names = pd.read_csv(file_dir + event + "/Contact.csv")
 msg = open(file_dir + event + "/txt.txt", "r").read()
 media_files = file_dir + event + "/Media/"
 
-# Text to Audio Converter
-# language = 'en'
-# output = gTTS(text=msg, lang=language, slow=False)
-# output.save(file_dir + event + "/0 Audio.mp3")
+#Text to Audio Converter
+language = 'en'
+output = gTTS(text=msg, lang=language, slow=False)
+output.save(file_dir + event + "/0 Audio.mp3")
 
 # Code to Save Login Details using cookies
 options = webdriver.ChromeOptions();
