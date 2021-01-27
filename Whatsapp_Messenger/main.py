@@ -1,5 +1,6 @@
 from gtts import gTTS
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from time import sleep
 import os
 import pandas as pd
@@ -94,22 +95,29 @@ def whatsapp_automater(name, audio_value, text_value, media_value):
 
 
 # Initial Details
-file_dir = "C:/Users/91938/Desktop/GIT_HUB/Projects/Whatsapp_Messenger/Event/"
+dir = "C:/Users/91938/Desktop/GIT_HUB/Projects/Whatsapp_Messenger/"
+file_dir = dir +"Event/"
 event = "Republic_Day"
 contact_names = pd.read_csv(file_dir + event + "/Contact.csv")
 msg = open(file_dir + event + "/txt.txt", "r").read()
 media_files = file_dir + event + "/Media/"
 
-# Code to Save Login Details using cookies
-options = webdriver.ChromeOptions();
+# Adding Arguments to chrome browser so that it wont Crash
+options = Options();
 options.add_argument('--user-data-dir=./User_Data')
+options.add_argument("start-maximized");
+options.add_argument("disable-infobars");
+options.add_argument("--disable-extensions");
+options.add_argument("--disable-gpu");
+options.add_argument("--disable-dev-shm-usage");
+options.add_argument("--no-sandbox");
 driver = webdriver.Chrome('C:/Users/91938/Desktop/GIT_HUB/chromedriver.exe', options=options)
 
 # Open Website
 driver.get('https://web.whatsapp.com/')
-sleep(12)
+sleep(15)
 
-# Calling a function for text to audio conversion
+# Code to Convert Text to Audio
 txt_to_audio_converter()
 
 # Code to Send To Multiple Contacts
