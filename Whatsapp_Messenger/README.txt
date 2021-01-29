@@ -26,7 +26,6 @@ Language Used : Python
 	7	25-01-2021		Added a Feature to send to Multiple groups by storing details in an Execel file
 	8	25-01-2021		Added a Feature of customising audio and text to each group
 	9	26-01-2021		Made Code Modular and made it made it in a such a way to cutomoze what sould be sent(text,audio,media)
-	10	29-01-2021		Added a Method to Create New Group. Has Some problem in Adding Contacts though
 
 Advancements that can be made
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
