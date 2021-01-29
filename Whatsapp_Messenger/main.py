@@ -81,6 +81,52 @@ def chat_selector(person_name):
     sleep(5)
 
 
+# New Group Creator
+def group_creator():
+    people_name = open(file_dir + event + "/group_names.txt", "r").read().split("\n")
+    triple_dot = driver.find_element_by_xpath('//*[@id="side"]/header/div[2]/div/span/div[3]/div/span')
+    triple_dot.click()
+
+    sleep(1)
+
+    new_grp = driver.find_element_by_xpath('//*[@id="side"]/header/div[2]/div/span/div[3]/span/div/ul/li[1]/div')
+    new_grp.click()
+
+    contact_searcher = driver.find_element_by_xpath(
+        '//*[@id="app"]/div/div/div[2]/div[1]/span/div/span/div/div/div[1]/div/div/input')
+    contact_searcher.click()
+    contact_searcher.send_keys(people_name[0])
+
+    sleep(5)
+
+    contact_clicker = driver.find_element_by_xpath(
+        '//*[@id="app"]/div/div/div[2]/div[1]/span/div/span/div/div/div[2]/div[1]/div/div/div[4]')
+    contact_clicker.click()
+
+
+    for i in range(1,len(people_name)-1):
+        contact_searcher = driver.find_element_by_xpath('//*[@id="app"]/div/div/div[2]/div[1]/span/div/span/div/div/div[1]/div/div/input')
+        contact_searcher.click()
+        contact_searcher.send_keys(people_name[i])
+
+        sleep(5)
+
+        contact_clicker = driver.find_element_by_xpath('//*[@id="app"]/div/div/div[2]/div[1]/span/div/span/div/div/div[2]/div[1]/div/div/div/div/div/div[2]/div[1]/div/span/span')
+
+        contact_clicker.click()
+
+    next_step = driver.find_element_by_xpath('//*[@id="app"]/div/div/div[2]/div[1]/span/div/span/div/div/span/div/span')
+    next_step.click()
+
+    group_name = driver.find_element_by_xpath('//*[@id="app"]/div/div/div[2]/div[1]/span/div/span/div/div/div[2]/div/div[2]/div/div[2]')
+    group_name.click()
+    group_name.send_keys(people_name[-1])
+
+    final_creator = driver.find_element_by_xpath('//*[@id="app"]/div/div/div[2]/div[1]/span/div/span/div/div/span/div/div/span')
+    final_creator.click()
+
+
+
 # Main Function
 def whatsapp_automater(name, audio_value, text_value, media_value):
     chat_selector(name)
@@ -97,7 +143,7 @@ def whatsapp_automater(name, audio_value, text_value, media_value):
 # Initial Details
 dir = "C:/Users/91938/Desktop/GIT_HUB/Projects/Whatsapp_Messenger/"
 file_dir = dir +"Event/"
-event = "Republic_Day"
+event = "NS"
 contact_names = pd.read_csv(file_dir + event + "/Contact.csv")
 msg = open(file_dir + event + "/txt.txt", "r").read()
 media_files = file_dir + event + "/Media/"
@@ -118,12 +164,12 @@ driver.get('https://web.whatsapp.com/')
 sleep(15)
 
 # Code to Convert Text to Audio
-txt_to_audio_converter()
-
+ # txt_to_audio_converter()
+group_creator()
 # Code to Send To Multiple Contacts
-for num in range(len(contact_names["Contact_name"])):
-    whatsapp_automater(contact_names.iloc[num, 0], contact_names.iloc[num, 1], contact_names.iloc[num, 2],
-                       contact_names.iloc[num, 3])
+# for num in range(len(contact_names["Contact_name"])):
+#     whatsapp_automater(contact_names.iloc[num, 0], contact_names.iloc[num, 1], contact_names.iloc[num, 2],
+#                        contact_names.iloc[num, 3])
 
 # Code to Close Driver
-driver.close()
+# driver.close()
