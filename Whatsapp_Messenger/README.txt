@@ -26,10 +26,11 @@ Language Used : Python
 	7	25-01-2021		Added a Feature to send to Multiple groups by storing details in an Execel file
 	8	25-01-2021		Added a Feature of customising audio and text to each group
 	9	26-01-2021		Made Code Modular and made it made it in a such a way to cutomoze what sould be sent(text,audio,media)
-	10	29-01-2021		Added a Method to Create New Group. Has Some problem in Adding Contacts though
+	10	29-01-2021		Added a Method to Create New Group
 
 Advancements that can be made
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
-1) Search for the contact photos in the gallery using CNN and Send it along with the message(Kinda not sure)
-2) Make the code recognize those dates autmatically and send messages (Automating Task Scheduler is required or a server is required. Both arent feasible)
-3) Keep this in some colab or something and make it automatic (Needs a server. So not implementing it Right now)
+1) Whatsapp linked Google Search Bot, Youtube video link sender
+2) Search for the contact photos in the gallery using CNN and Send it along with the message(Kinda not sure)
+3) Make the code recognize those dates autmatically and send messages (Automating Task Scheduler is required or a server is required. Both arent feasible)
+4) Keep this in some colab or something and make it automatic (Needs a server. So not implementing it Right now)
