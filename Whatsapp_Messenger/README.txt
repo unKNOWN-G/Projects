@@ -28,6 +28,10 @@ Language Used : Python
 	9	26-01-2021		Made Code Modular and made it made it in a such a way to cutomoze what sould be sent(text,audio,media)
 	10	29-01-2021		Added a Method to Create New Group
 
+Advanceents that should be made
+¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+1) Make the functions importable to other files. This copy pasting / Editing the original Script always is not suggested 
+
 Advancements that can be made
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 1) Whatsapp linked Google Search Bot, Youtube video link sender
