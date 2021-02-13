@@ -15,7 +15,7 @@ Language Used : Python
 	2	12-01-2021		The Dataset requires Larger computation. Shifting to Colab
 	3	13-01-2021		The previous dataset is huge and rquires high compitation which we dont have right currently. Shifting to Small size tweet dataset and did setup an architecture in Colab
 					The code is working but the Neural net isnt learning anything. The Validation accuracy is at constant level.
-	4	15-01-2021		Found the mistake. It was a mistake in One-Hot Encoding. Hence the network wasnt able to learn anything. Now its working fine
+	4	15-01-2021		Found the mistake. It was a mistake in One-Hot Encoding. Hence the network wasnt able to learn anything. Now its working as the problem is found and resolved
 					Formatted the Colab Notebook	
 					Wrote in python file too
 	
