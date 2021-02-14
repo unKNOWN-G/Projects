@@ -23,4 +23,4 @@ Language Used : Python
 Advancements that can be made
 1) The present Accuracy can be improved very much by using enhanced preprocessing stages and Using proper LSTM architecture
 2) The Architecture can be implemented with Different Classifiers like Bidirectional LSTM, Naive Bias Classifier and 1D Convolution Neural Network
-3) Graphs can be plotted to see the training of the model, Model saving techniques can be explored
+3) Graphs can be plotted to see the training of the model, Model saving techniques can be explored, Loading model
