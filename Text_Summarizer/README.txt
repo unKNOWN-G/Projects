@@ -3,7 +3,7 @@
 
 Date : 15-02-2021																Author : unKNOWN-G
 
-In this project I aim to make a NLP based Extract summarizer which basically extracts all imp phrases from the text
+In this project I aim to make a NLP based Extract summarizer which basically extracts all important phrases from the text
 
 Language Used : Python
 
