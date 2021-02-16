@@ -52,7 +52,7 @@ for i in range(len(train_data)):
     except:
         train_data.iloc[i, 0] = str(train_data.iloc[i, 0]).lower()
         pass
-print(" Training Data            : ", train_data.iloc[0, 0])
+print("Training Data             : ", train_data.iloc[0, 0])
 
 ## Tokenization
 tokens = []
@@ -93,11 +93,11 @@ word_lengths = []
 for i in range(len(lemmatizers)):
     word_lengths.append(len(lemmatizers[i]))
 mean = sum(word_lengths) / len(word_lengths)
-plt.hist(word_lengths)
-plt.show()
+# plt.hist(word_lengths)
+# plt.show()
 # Over here The max_length represents the max length of phrase taken inro consideration
-max_len = int(mean)
-print(" Mean Length of twitter tweets = ", max_len)
+max_len = round(mean)
+print("Mean Length of tweets     : ", max_len)
 
 # One Hot Encoding of the Data
 pos = []
@@ -128,7 +128,7 @@ total_word_count = len(total_words)
 print("\n\nTotal Word Count          : ", total_word_count)
 
 sorted_order = lemmatizers_to_int.most_common(total_word_count)
-print("Most Repeated Word        : ", sorted_order[0][0])
+print("Top 5 repeated Words      : ", [word for (word,key) in sorted_order[0:5]])
 
 vocab_to_index = {w: i + 1 for i, (w, c) in enumerate(sorted_order)}
 
