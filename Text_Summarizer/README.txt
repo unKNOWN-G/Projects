@@ -1,5 +1,5 @@
-										Text Summarizer
-										¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+								    Text Summarizer
+								    ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 
 Date : 15-02-2021																Author : unKNOWN-G
 
