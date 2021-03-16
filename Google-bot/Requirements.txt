@@ -1,0 +1,6 @@
+bs4
+requests
+selenium
+lxml
+html5lib
+python == 3.8.1
