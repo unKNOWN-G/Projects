@@ -13,7 +13,9 @@ Language Used : Python
   Update Count	   Date							Description
   ¯¯¯¯¯¯¯¯¯¯¯¯	   ¯¯¯¯							¯¯¯¯¯¯¯¯¯¯¯
 	1            16-03-2021             Created a Requirements file, Wrote basic script that i had an idea on
-	2            17-03-2021             Added code to get the top search results links from google
+	2            17-03-2021             Added code to get the top search results links from google(Its recognising many unwated histories and websites not only the top search results)
+	3	         19-03-2021		        Added proper code to get correct google search results
+
 
 Advancements that should be made
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
