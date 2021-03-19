@@ -16,7 +16,7 @@ Language Used : Python
 	2            17-03-2021             Added code to get the top search results links from google(Its recognising many unwated histories and websites not only the top search results)
 	3	         19-03-2021		        Added proper code to get correct google search results
     4            19-03-2021             Modified the code in a Function call format
-
+    5            19-03-2021             Changed a Bug to get only H3 element results
 Advancements that should be made
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
 
