@@ -6,13 +6,13 @@ import os
 input_text = input("Enter Your Search Text : ")
 driver = webdriver.Chrome('C:/Users/91938/Desktop/GIT_HUB/chromedriver.exe')
 new_folder_path = 'C:/Users/91938/Desktop/{0}/'.format(input_text)
-os.mkdir(new_folder_path)
+# os.mkdir(new_folder_path)
 
 
 def google_searcher(search_word):
     driver.get("https://www.google.com/search?q=" + search_word)
     sleep(2)
-    sub_results = driver.find_elements_by_xpath("//div[@class='g']")
+    sub_results = driver.find_elements_by_xpath("//div[@class='hlcw0c']")
     n1 = min(5, len(sub_results))
     google_search_results = []
     print("----------------------------------------------------------------")
@@ -22,4 +22,4 @@ def google_searcher(search_word):
             sub_results[i].find_element_by_xpath('.//div[@class="yuRUbf"]/a').get_attribute("href"))
         # driver.execute_script("window.open('{0}');".format(results[i]))
         print(google_search_results[i])
-
+google_searcher("humans")
