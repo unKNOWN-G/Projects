@@ -41,4 +41,19 @@ def youtube_searcher(search_word):
         # #driver.execute_script("window.open('{0}');".format(youtube_search_results[i]))
         print(youtube_search_results[i])
 
-google_searcher("humans")
+def google_scholar(search_word,count):
+    driver.get("https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=" + search_word + "&btnG=")
+    sleep(2)
+    sub_results = driver.find_elements_by_xpath("//h3[@class='gs_rt']/a")
+    n1 = min(count, len(sub_results))
+    google_scholar_results = []
+    print("----------------------------------------------------------------")
+    print('Top {1} Google Search Results for "{0}" : '.format(search_word, n1))
+    for i in range(n1):
+        print(sub_results[i].text)
+        google_scholar_results.append(sub_results[i].get_attribute("href"))
+        # driver.execute_script("window.open('{0}');".format(results[i]))
+        print(google_scholar_results[i])
+    print("----------------------------------------------------------------")
+    return google_scholar_results
+
