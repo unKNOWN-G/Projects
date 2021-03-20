@@ -23,3 +23,22 @@ def google_searcher(search_word):
         # driver.execute_script("window.open('{0}');".format(results[i]))
         print(google_search_results[i])
 
+def youtube_searcher(search_word):
+    driver.get("https://www.youtube.com/results?search_query=" + search_word)
+    sleep(2)
+    youtube_results = driver.find_elements_by_xpath("//div[@id='title-wrapper']")
+    n2 = min(5, len(youtube_results))
+    youtube_search_results = {}
+    print("----------------------------------------------------------------")
+    print('Top {1} Youtube Search Results for "{0}" : '.format(search_word, n2))
+    youtube_search_results = [[0] * 2] * n2
+    for i in range(n2):
+        ## Title and Link
+
+        t1 = youtube_results[i].find_element_by_xpath(".//a[@id='video-title']")
+        youtube_search_results[i][0] = t1.get_attribute("title")
+        youtube_search_results[i][1] = t1.get_attribute("href")
+        # #driver.execute_script("window.open('{0}');".format(youtube_search_results[i]))
+        print(youtube_search_results[i])
+
+google_searcher("humans")
