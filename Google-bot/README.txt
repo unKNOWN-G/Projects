@@ -18,7 +18,7 @@ Language Used : Python
     4            19-03-2021             Modified the code in a Function call format
     5            19-03-2021             Changed a Bug to get only H3 element results
     6            20-03-2021             Added Code to get Youtube Search Results too(Top Relavent)
-    7            21-03-2021             Added code to search in google scholar
+    7            21-03-2021             Added code to search in google scholar to get top n results
 
 
 Advancements that should be made
