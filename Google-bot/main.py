@@ -57,3 +57,18 @@ def google_scholar(search_word,count):
     print("----------------------------------------------------------------")
     return google_scholar_results
 
+def sciHub(input_text,count):
+    Link_elements = google_scholar(input_text,count)
+    for i in range(len(Link_elements)):
+        driver.get("https://sci-hub.do/" + Link_elements[i])
+        sleep(3)
+        try:
+            pdf_download_link = driver.find_element_by_xpath('//*[@id="buttons"]/ul/li/a')
+            sleep(6)
+            pdf_download_link.click()
+            print("PDF Downloaded")
+        except:
+            print(Link_elements[i])
+    print("----------------------------------------------------------------")
+        # driver.execute_script("window.open('{0}');".format(Link_elements[i]))
+
