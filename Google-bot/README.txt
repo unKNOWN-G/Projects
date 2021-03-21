@@ -20,7 +20,7 @@ Language Used : Python
     6            20-03-2021             Added Code to get Youtube Search Results too(Top Relavent)
     7            21-03-2021             Added code to search in google scholar to get top n results
     8            22-03-2021             Made an Update of Using Scihub to download from the links of top 5 research papers obtained from google_scholar function return links
-
+    9            22-03-2021             Added  a Feature to extract images from google images
 
 Advancements that should be made
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
