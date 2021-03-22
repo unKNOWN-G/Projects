@@ -72,3 +72,25 @@ def sciHub(input_text,count):
     print("----------------------------------------------------------------")
         # driver.execute_script("window.open('{0}');".format(Link_elements[i]))
 
+def image_downloader(input_text, count):
+    os.mkdir(new_folder_path + 'photos')
+    driver.get("https://www.google.ca/imghp?hl=en&tab=ri&authuser=0&ogbl")
+    image_url = driver.find_element_by_xpath('//*[@id="sbtc"]/div/div[2]/input').send_keys(input_text, Keys.ENTER)
+    j = 0
+    pred_count = count+int(count/25)+2
+    for i in range(0,pred_count):
+        if i % 25 == 0:
+            print("Skipped ",i)
+            continue
+        else:
+            try:
+                driver.find_element_by_xpath('//*[@id="islrg"]/div[1]/div[' + str(i) + ']/a[1]/div[1]/img').screenshot(
+                    new_folder_path + 'photos/' + "{0}.png".format(j))
+                j = j + 1
+            except:
+                try:
+                    print("Arghh a problem at ",i)
+                    driver.find_element_by_xpath('//*[@id="islmp"]/div/div/div/div/div[4]/div[2]/input').click()
+                except:
+                    pred_count = pred_count + 1
+                    pass
