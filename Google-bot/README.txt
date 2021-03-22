@@ -19,8 +19,9 @@ Language Used : Python
     5            19-03-2021             Changed a Bug to get only H3 element results
     6            20-03-2021             Added Code to get Youtube Search Results too(Top Relavent)
     7            21-03-2021             Added code to search in google scholar to get top n results
-    8            22-03-2021             Made an Update of Using Scihub to download from the links of top 5 research papers obtained from google_scholar function return links
+    8            21-03-2021             Made an Update of Using Scihub to download from the links of top 5 research papers obtained from google_scholar function return links
     9            22-03-2021             Added  a Feature to extract images from google images
+    10           22-03-2021             A bug found. Its taking ss of same size. like the image that being downloaded is of same size and is not actually getting downloaded.Its just getting screenshotted. Need to find an Alternate
 
 Advancements that should be made
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
