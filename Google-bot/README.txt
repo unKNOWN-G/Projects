@@ -25,6 +25,9 @@ Language Used : Python
 
 Advancements that should be made
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
+1) There are Bugs in google_search code(A confusion that needs to be taken care about the drop box links that appear)
+2) google_image_screenshot_taker(Firstly its not that great looking, all images are of same sizely cropped)
+3) scihub(Need to work on how to download files when they are shown in chrome pdf display)
 
 Advancements that can be made
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
