@@ -13,7 +13,7 @@ Language Used : Python
   Update Count	   	Date							Description
   ¯¯¯¯¯¯¯¯¯¯¯¯	   	¯¯¯¯							¯¯¯¯¯¯¯¯¯¯¯
 	1            16-03-2021             Created a Requirements file, Wrote basic script that i had an idea on
-	2            17-03-2021             Added code to get the top search results links from google(Its recognising many unwated histories and websites not only the top search results)
+	2            17-03-2021             Added code to get the top search results links from google(Its recognising many unwated histories not only the top search results)
 	3	     19-03-2021		    Added proper code to get correct google search results
     	4            19-03-2021             Modified the code in a Function call format
     	5            19-03-2021             Changed a Bug to get only H3 element results
@@ -21,7 +21,7 @@ Language Used : Python
     	7            21-03-2021             Added code to search in google scholar to get top n results
     	8            21-03-2021             Made an Update of Using Scihub to download from the links of top 5 research papers obtained from google_scholar function return links
     	9            22-03-2021             Added  a Feature to extract images from google images
-    	10           22-03-2021             A bug found. Its taking ss of same size. like the image that being downloaded is of same size and is not actually getting downloaded.Its just getting screenshotted. Need to find an Alternate
+    	10           22-03-2021             A bug found. Image is not actually getting downloaded,it is getting screenshotted. And that too a bad one. Need to look for alternates
 
 Advancements that should be made
 ¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯¯
