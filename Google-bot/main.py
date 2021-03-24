@@ -95,6 +95,8 @@ def google_image_screenshot_taker(input_text, count):
                     pass
     print("{0} Images of {1} hav been downloaded from google".format(j,input_text))
     print("----------------------------------------------------------------")
+
+
 google_image_screenshot_taker(search_word,input_count)
 google_searcher(search_word,input_count)
 sciHub(search_word,input_count)
