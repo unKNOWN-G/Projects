@@ -2,13 +2,13 @@ from selenium import webdriver
 from time import sleep
 
 # Gmail Login Credentials
-sender_email = "sherlocked@pragyan.org"
-sender_password = "sherlockphronesisdoctorstrange"
+sender_email = " "
+sender_password = " "
 
 # Gmail text
-receiver_email = "karnatisaievenkatagiri@gmail.com"
-subject = "Text"
-body = "We Share the same vibe boi"
+receiver_email = " "
+subject = " "
+body = " "
 
 # Chrome Driver
 driverpath ='C:/Users/91938/Desktop/GIT_HUB/chromedriver.exe'
