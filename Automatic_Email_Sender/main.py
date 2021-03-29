@@ -29,5 +29,12 @@ driver.find_element_by_xpath('//*[@id="password"]/div[1]/div/div[1]/input').send
 driver.find_element_by_xpath('//*[@id="passwordNext"]/div/button/div[2]').click()
 sleep(7)
 
+# Compose
+try:
+    driver.find_element_by_css_selector('.z0>.L3').click()
+except:
+    driver.find_element_by_css_selector('.z0>.L3::before').click()
+sleep(1)
+
 # Close Browser
 driver.close()
