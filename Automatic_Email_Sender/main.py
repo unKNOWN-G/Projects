@@ -36,14 +36,5 @@ except:
     driver.find_element_by_css_selector('.z0>.L3::before').click()
 sleep(1)
 
-# Input Recipient
-driver.find_element_by_css_selector(".oj div textarea").send_keys(receiver_email)
-sleep(0.5)
-
-# Input Subject
-driver.find_element_by_css_selector(".aoD.az6 input").send_keys(subject)
-sleep(0.5)
-
-
 # Close Browser
 driver.close()
