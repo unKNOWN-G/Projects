@@ -5,10 +5,10 @@ Date - 25-03-2021															                        Author - unKNOWN-G
 
 In This Project My main goal is to create a python code which can automatically send mails to a bunch of recipients from a sender mail
 Some perks of this project are
-1) You can avoid  using cc,bcc. Thereby you wont be revealing the information that the mail was sent to whom
-2) Bolding text is an important summarization feature to highlight important points . In this project you can bold certain parts of mail and can write the rest in normal which isnt a general feature in normal Email senders. B
-3) You can customize each email like mentioning on the top of each mail. "Dear unKNOWN, "
-4) You can schedule your mailing time like always. This is an Alternate way other than the email Scheduler
+1) You can avoid  using cc,bcc. Thereby you wont be revealing the information that the mail was sent to whom.
+2) Bolding text is an important summarization feature to highlight important points . In this project you can bold certain parts of mail and can write the rest in normal which isnt a general feature in normal Automatic Email senders.
+3) You can customize each email like mentioning on the top of each mail. "Dear unKNOWN, ".
+4) You can schedule your mailing time like always. This is an Alternate way other than the email Scheduler.
 
 Language Used : Python
 
