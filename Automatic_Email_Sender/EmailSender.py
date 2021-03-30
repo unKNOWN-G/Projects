@@ -61,9 +61,11 @@ class EmailSender:
 
     def send_mails(self, driver_path: str, emails: list) -> None:
         driver = webdriver.Chrome(driver_path)
+        driver.maximize_window()
         login(driver, self.sender_email, self.sender_password)
         for i in range(len(emails)):
             send_single_mail(driver, emails[i], self.subject, self.body)
 
+        sleep(2)
         # Close Browser
         driver.close()
