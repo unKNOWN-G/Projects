@@ -2,6 +2,10 @@ from selenium import webdriver
 from time import sleep
 
 
+def bolder(driver: webdriver):
+    driver.find_element_by_css_selector('.aaA.eN').click()
+
+
 def login(driver: webdriver, sender_email: str, sender_password: str) -> None:
     # Open Gmail Page
     driver.get("http://www.gmail.com")
@@ -16,7 +20,7 @@ def login(driver: webdriver, sender_email: str, sender_password: str) -> None:
     sleep(7)
 
 
-def send_single_mail(driver: webdriver, email: str, email_subject: str, email_body: str) -> None:
+def send_single_mail(driver: webdriver, email: str, email_subject: str, email_body: list) -> None:
     # Compose button
     try:
         driver.find_element_by_css_selector('.z0>.L3').click()
@@ -33,7 +37,12 @@ def send_single_mail(driver: webdriver, email: str, email_subject: str, email_bo
     sleep(0.5)
 
     # Input Text
-    driver.find_element_by_css_selector(".Ar.Au div").send_keys(email_body)
+    if(len(email_body)>1):
+        for i in range(len(email_body)):
+            driver.find_element_by_css_selector(".Ar.Au div").send_keys(email_body[i])
+            bolder(driver)
+    else:
+        driver.find_element_by_css_selector(".Ar.Au div").send_keys(email_body[0])
     sleep(0.5)
 
     # Send Button
@@ -44,7 +53,7 @@ def send_single_mail(driver: webdriver, email: str, email_subject: str, email_bo
 
 
 class EmailSender:
-    def __init__(self, sender_email: str, sender_password: str, mail_subject: str, mail_body: str):
+    def __init__(self, sender_email: str, sender_password: str, mail_subject: str, mail_body: list):
         self.sender_email = sender_email
         self.sender_password = sender_password
         self.subject = mail_subject
