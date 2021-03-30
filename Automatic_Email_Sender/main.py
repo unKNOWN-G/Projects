@@ -5,7 +5,7 @@ import pandas
 contact_emails = pandas.read_csv("./Recipients_list.csv")
 Emails = contact_emails["Email"].to_list()
 
-# Text- This is a list, 1st element will be in normal font, 2nd element will be in bold, 3rd element will in normal font
+# text- This is a list, 1st element will be in normal font, 2nd element will be in bold, 3rd element will in normal font ....
 # For Line gaps and all used """ """ comment and define the element
 text = ["normal text", "Bold text"]
 
