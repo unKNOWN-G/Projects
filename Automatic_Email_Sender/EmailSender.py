@@ -3,7 +3,11 @@ from time import sleep
 
 
 def bolder(driver: webdriver):
-    driver.find_element_by_css_selector('.aaA.eN').click()
+    try:
+        driver.find_element_by_css_selector('.aaA.eN').click()
+    except:
+        driver.find_element_by_css_selector('.oc .J-Z-I').click()
+        driver.find_element_by_css_selector('.aaA.eN').click()
 
 
 def login(driver: webdriver, sender_email: str, sender_password: str) -> None:
@@ -37,7 +41,7 @@ def send_single_mail(driver: webdriver, email: str, email_subject: str, email_bo
     sleep(0.5)
 
     # Input Text
-    if(len(email_body)>1):
+    if (len(email_body) > 1):
         for i in range(len(email_body)):
             driver.find_element_by_css_selector(".Ar.Au div").send_keys(email_body[i])
             bolder(driver)
